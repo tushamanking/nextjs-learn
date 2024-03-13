@@ -23,10 +23,10 @@ export default function Page() {
             , brought to you by Vercel.
           </p>
 
-          <div
+          {/* <div
             className="h-0 w-0 border-b-[30px] border-l-[20px] border-r-[20px] border-b-black border-l-transparent border-r-transparent"
           />
-          <div className={styles.shape} />
+          <div className={styles.shape} /> */}
 
           <Link
             href="/login"
@@ -35,9 +35,9 @@ export default function Page() {
             <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
           </Link>
 
-          <p className={`${lusitana}`}>
+          {/* <p className={`${lusitana}`}>
             Test the Lusitana font
-          </p>
+          </p> */}
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
           {/* Add Hero Images Here */}
