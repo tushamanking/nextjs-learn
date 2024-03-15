@@ -11,31 +11,31 @@ import {
 
 export default async function Page() {
     // waterfall fetching
-    // const revenue = await fetchRevenue();
-    // const latestInvoices = await fetchLatestInvoices();
+    const revenue = await fetchRevenue();
+    const latestInvoices = await fetchLatestInvoices();
 
-    // const {
-    //     numberOfCustomers,
-    //     numberOfInvoices,
-    //     totalPaidInvoices,
-    //     totalPendingInvoices
-    // } = await fetchCardData();
+    const {
+        numberOfCustomers,
+        numberOfInvoices,
+        totalPaidInvoices,
+        totalPendingInvoices
+    } = await fetchCardData();
 
     // parallel fetching
-    const [
-        revenue, 
-        latestInvoices,
-        {
-            numberOfCustomers,
-            numberOfInvoices,
-            totalPaidInvoices,
-            totalPendingInvoices
-        }
-    ] = await Promise.all([
-        fetchRevenue(),
-        fetchLatestInvoices(),
-        fetchCardData()
-    ]);
+    // const [
+    //     revenue, 
+    //     latestInvoices,
+    //     {
+    //         numberOfCustomers,
+    //         numberOfInvoices,
+    //         totalPaidInvoices,
+    //         totalPendingInvoices
+    //     }
+    // ] = await Promise.all([
+    //     fetchRevenue(),
+    //     fetchLatestInvoices(),
+    //     fetchCardData()
+    // ]);
 
     // console.log(revenue);
     // console.log(latestInvoices);
