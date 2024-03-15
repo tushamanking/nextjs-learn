@@ -9,6 +9,8 @@ import {
     fetchCardData
 } from '@/app/lib/data';
 
+export const dynamic = "force-dynamic";
+
 export default async function Page() {
     // waterfall fetching
     const revenue = await fetchRevenue();
