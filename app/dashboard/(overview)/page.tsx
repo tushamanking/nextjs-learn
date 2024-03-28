@@ -20,6 +20,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Dashboard',
+  description: 'The React Framework for the Web',
 };
 
 export const dynamic = "force-dynamic";
