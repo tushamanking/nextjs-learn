@@ -5,9 +5,15 @@ import { notFound } from 'next/navigation';
 
 import { Metadata } from 'next';
 
-export const metadata: Metadata = {
-  title: 'Edit',
-};
+// export const metadata: Metadata = {
+//   title: 'Edit',
+// };
+
+export async function generateMetadata({params} : {params : {id : string}}) {
+  return {
+    title: `${params.id}`,
+  }
+}
  
 export default async function Page(
     {params} : 
